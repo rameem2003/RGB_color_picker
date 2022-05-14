@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Picker</title>
+
+    <!-- local CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app_body">
+        <h1>RGB Color</h1>
+
+        <div id="window"></div>
+
+        <div class="slider">
+            <div class="color_group">
+                <span>R</span> <input type="range" name="" id="r" min="0" max="255" value="55">
+                <div class="color_value" id="r_value">0</div>
+            </div>
+
+
+            <div class="color_group">
+                <span>G</span> <input type="range" name="" id="g" min="0" max="255" value="150">
+                <div class="color_value" id="g_value">0</div>
+            </div>
+
+
+            <div class="color_group">
+                <span>B</span> <input type="range" name="" id="b" min="0" max="255" value="255">
+                <div class="color_value" id="b_value">0</div>
+            </div>
+        </div>
+
+        <div class="color_code_track">
+            <input type="text" id="color_code" placeholder="RGB Color" readonly>
+            <button id="copy">Copy</button>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
