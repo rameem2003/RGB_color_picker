@@ -3,7 +3,6 @@ const copyBtn = document.getElementById("copy");
 appBody.addEventListener("change", color);
 
 window.onload = () => {
-    // main()
     color();
 }
 
@@ -14,16 +13,7 @@ copyBtn.addEventListener("click", () => {
     navigator.clipboard.writeText(bgcolor);
 })
 
-// function main(){
-//     const copyBtn = document.getElementById("copy");
 
-//     copyBtn.addEventListener("click", function(){
-//         var bgcolor = color();
-//         console.log(bgcolor);
-
-//         navigator.clipboard.writeText(bgcolor)
-//     })
-// }
 
 
 function color(){
